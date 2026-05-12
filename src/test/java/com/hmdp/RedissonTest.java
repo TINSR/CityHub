@@ -6,8 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.annotation.Resource;
+import jakarta.annotation.Resource; 
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
