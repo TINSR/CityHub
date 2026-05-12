@@ -47,7 +47,7 @@ public class SemanticSearchServiceImpl implements SemanticSearchService {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    // 黑马点评的缓存 Key
+    // CityHub 的缓存 Key
     private static final String CACHE_SHOP_KEY = "cache:shop:";
     private static final Long CACHE_SHOP_TTL = 30L;
     /**

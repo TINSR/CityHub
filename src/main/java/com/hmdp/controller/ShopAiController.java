@@ -38,7 +38,7 @@ public class ShopAiController {
             // 调用 Service 层，拿到大模型匹配出的店铺列表
             List<Shop> shopList = semanticSearchService.searchShops(query);
 
-            // 使用黑马点评原生的 Result 进行包装并返回给前端
+            // 使用 CityHub 原生的 Result 进行包装并返回给前端
             return Result.ok(shopList, (long) shopList.size());
         } catch (Exception e) {
             log.error("AI 搜店接口异常", e);
